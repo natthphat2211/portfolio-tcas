@@ -3,7 +3,7 @@ import type { NextConfig } from 'next'
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   experimental: {
-    // turbo: false, // ปิด Turbopack ใช้ Webpack แทน
+    // turbo: false, // บังคับไม่ใช้ Turbopack
   },
 }
 
