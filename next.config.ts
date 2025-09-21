@@ -1,10 +1,9 @@
-import type { NextConfig } from 'next'
-
-const nextConfig: NextConfig = {
+const nextConfig = {
   reactStrictMode: true,
+  webpack: (config: any) => {
+    return config
+  },
   experimental: {
-    // turbo: false, // บังคับไม่ใช้ Turbopack
+    turbo: false,
   },
 }
-
-export default nextConfig
